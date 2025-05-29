@@ -1,0 +1,75 @@
+body {
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.calculator {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .calculator {
+  background: #1e1e1e;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark #display {
+  background: #222;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.dark button {
+  background: #333;
+  color: white;
+}
+
+body.dark button:hover {
+  background: #444;
+}
